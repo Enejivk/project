@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="banner">
+        <img src="/images/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your hair style your life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="/images/menu.png" id="menu">
+    </div>
+
+    <!-- FEATURES -->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experience staff</h1>
+                <div class="features-desc">
+                    <div class="features-icon"></div>
+                    <div class="features-text ">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores mollitia iusto quod fugiat. Aspernatur nesciunt inventore ullam quis tempora blanditiis corrupti assumenda, voluptates nostrum alias, quisquam ea praesentium mollitia molestias.
+                            Vitae modi ut quo iusto mollitia quasi totam consequatur tempore enim quaerat reiciendis eaque obcaecati porro id, veritatis molestias repellendus non! Ullam facere voluptates fugit asperiores quo libero ducimus distinctio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="/images/barber-man.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "images/close.png" 
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png" 
+            }
+        }
+    </script>    
+</body>
+</html>
